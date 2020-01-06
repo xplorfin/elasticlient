@@ -83,3 +83,7 @@ endif()
 install(DIRECTORY ${ELASTICLIENT_INCLUDE_DIR}/elasticlient
         DESTINATION include
         FILES_MATCHING PATTERN "*.h")
+        
+install(DIRECTORY ${LIBRARY_OUTPUT_PATH}
+        DESTINATION .
+        FILES_MATCHING PATTERN "*")
